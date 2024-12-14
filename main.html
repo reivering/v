@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="menu-item">
+            <a href="main.html">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="main.html">
+            <i class="fas fa-search"></i>
+            <span>Search</span>
+        </div>
+        <hr>
+        <div class="menu-item">
+            <a href="#trendingMovies">
+                <i class="fas fa-film"></i>
+                <span>Movies</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#trendingTV">
+                <i class="fas fa-tv"></i>
+                <span>TV Shows</span>
+            </a>
+        </div>
+        <hr>
+        <div class="menu-item">
+            <a href="user.html">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="contact.html">
+                <i class="fas fa-phone"></i>
+                <span>Contact Us</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="top-bar">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        <a href="user.html">
+            <i class="fas fa-user login-icon" id="loginIcon"></i>
+        </a>
+    </div>
+
+    <div class="slider">
+        <div class="slide active">
+            <img src="Image/Crazy Rich Asians Banner.jpg" alt="Movie 1">
+            <div class="info">
+                <h2>Crazy Rich Asians</h2>
+                <p>MOVIE &nbsp;&nbsp; SEP 19, 2024 &nbsp;&nbsp; ⭐ 5.4</p>
+                <p>Rich Asian bruh.</p>
+                <a href="player.html">
+                    <button>Watch Now</button>
+                  </a>
+                <a href="https://www.youtube.com/watch?v=ZQ-YX-5bAs0">
+                    <button>Watch Trailer</button>
+                  </a>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="Image/Wild Robot Banner.jpg" alt="Movie 2">
+            <div class="info">
+                <h2>Wild Robot</h2>
+                <p>MOVIE &nbsp;&nbsp; AUG 10, 2023 &nbsp;&nbsp; ⭐ 6.8</p>
+                <p>A Wild Robot I think</p>
+                <a href="player.html">
+                    <button>Watch Now</button>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=67vbA5ZJdKQ">
+                    <button>Watch Trailer</button>
+                  </a>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="Image/Muse Banner.jpg" alt="Movie 3">
+            <div class="info">
+                <h2>Muse</h2>
+                <p>MOVIE &nbsp;&nbsp; MAR 5, 2023 &nbsp;&nbsp; ⭐ 7.2</p>
+                <p>Kobe Bryant Movie </p>
+                <a href="player.html">
+                    <button>Watch Now</button>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=8dga5amhKnQ">
+                    <button>Watch Trailer</button>
+                  </a>
+            </div>
+        </div>
+    </div>
+
+    <section id="trendingMovies">
+        <h2>Trending Movies</h2>
+        <div class="carousel">
+            <button class="carousel-btn movies-left-btn">◀</button>
+            <div class="carousel-items" id="moviesCarousel">
+                <a href="player.html" class="item">
+                    <img src="Image/Crazy Rich Asians.jpeg" alt="Crazy Rich Asians">
+                    <div class="rating">⭐ 8.5</div>
+                </a>
+                <a href="player.html" class="item">
+                    <img src="Image/DAREDEVIL.jpeg" alt="DareDevil">
+                    <div class="rating">⭐ 7.9</div>
+                </a>
+                <a href="player.html" class="item">
+                    <img src="Image/Fall Guy.jpeg" alt="Fall Guy">
+                    <div class="rating">⭐ 9.0</div>
+                </a>
+                <a href="player.html" class="item">
+                    <img src="Image/Gladiator 2.jpeg" alt="Gladiator 2">
+                    <div class="rating">⭐ 6.4</div>
+                </a>
+                <a href="player.html" class="item">
+                    <img src="Image/Hit Man.jpeg" alt="Hit Man">
+                    <div class="rating">⭐ 9.5</div>
+                </a>
+                <a href="player.html" class="item">
+                    <img src="Image/Monkey Man.jpeg" alt="Monkey Man">
+                    <div class="rating">⭐ 7.4</div>
+                </a>
+                <a href="player.html" class="item">
+                    <img src="Image/Oppenheimer.jpeg" alt="Oppenheimer">
+                    <div class="rating">⭐ 7.1</div>
+                </a>
+            </div>
+            <button class="carousel-btn movies-right-btn">▶</button>
+        </div>
+    </section>
+
+    <section id="trendingTV">
+        <h2>Trending TV Series</h2>
+        <div class="carousel">
+            <button class="carousel-btn tv-left-btn">◀</button>
+            <div class="carousel-items" id="tvCarousel">
+                <a href="player.html" class="item">
+                    <img src="Image/Breaking Bad.jpeg" alt="Breaking bad">
+                    <div class="rating">⭐ 7.7</div>
+                </a>
+                <a href="player.html" class="item">
+                    <img src="Image/Game Of Thrones.jpeg" alt="Game of Thrones">
+                    <div class="rating">⭐ 8.2</div>
+                </a>
+                <a href="player.html" class="item">
+                    <img src="Image/FRIENDS.jpeg" alt="Friends">
+                    <div class="rating">⭐ 9.8</div>
+                </a>
+                <a href="player.html" class="item">
+                    <img src="Image/One Piece.jpeg" alt="One Piece">
+                    <div class="rating">⭐ 8.5</div>
+                </a>
+                <a href="player.html" class="item">
+                    <img src="Image/The Last Dance.jpeg" alt="The Last Dance">
+                    <div class="rating">⭐ 9.4</div>
+                </a>
+                <a href="player.html" class="item">
+                    <img src="Image/Demon Slayer.jpeg" alt="Demon Slayer">
+                    <div class="rating">⭐ 9.3</div>
+                </a>
+                <a href="player.html" class="item">
+                    <img src="Image/Haikyuu.jpeg" alt="Haikyuu">
+                    <div class="rating">⭐ 7.2</div>
+                </a>
+            </div>
+            <button class="carousel-btn tv-right-btn">▶</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Visage 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

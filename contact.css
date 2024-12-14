@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('Image/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    color: #fff;
+  }
+  
+  .contact-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-container {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    text-align: center;
+  }
+  
+  .contact-container h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-container p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #bbb;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #ddd;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: #fff;
+    resize: none;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .input-group input::placeholder,
+  .input-group textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .input-group input:focus,
+  .input-group textarea:focus {
+    outline: none;
+    border: 2px solid #e50914;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background: #f40612;
+    transform: scale(1.03);
+  }
+  
+  #response-message {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  #response-message.success {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  #response-message.error {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-container {
+      margin: 0 15px;
+      padding: 20px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .contact-container h1 {
+      font-size: 22px;
+    }
+  }
+  

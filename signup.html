@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Visage</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-background">
+        <div class="login-container">
+            <div class="login-box">
+                <h1>Sign Up</h1>
+                <form id="signupForm">
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" placeholder="Password" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p>Already have an account? <a href="index.html">Sign in now.</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function (e) {
+            e.preventDefault(); 
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return;
+            }
+
+            alert(`Account created for ${name}! You can now log in.`);
+            window.location.href = "index.html"; 
+        });
+    </script>
+</body>
+</html>
